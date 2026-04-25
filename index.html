@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>八大森林樂園</title>
+
+<style>
+body {
+    margin:0;
+    font-family: "Noto Sans TC", sans-serif;
+    background:#f4f6f2;
+}
+
+/* 導覽列 */
+.nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight:bold;
+    font-size:22px;
+}
+
+.menu a {
+    margin:0 15px;
+    text-decoration:none;
+    color:#333;
+}
+
+.btn {
+    background:#2e7d32;
+    color:white;
+    padding:10px 18px;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+/* Hero */
+.hero {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px;
+    background:linear-gradient(to right,#eef5ea,#ffffff);
+}
+
+.hero-text h1 {
+    font-size:48px;
+    color:#2e7d32;
+}
+
+.hero-text p {
+    font-size:20px;
+    margin:20px 0;
+}
+
+.hero img {
+    width:45%;
+    border-radius:12px;
+}
+
+/* icon區 */
+.icons {
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin:30px 0;
+}
+
+.icon {
+    text-align:center;
+}
+
+/* 卡片 */
+.cards {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.card {
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.card h3 {
+    padding:15px;
+}
+
+/* 資訊區 */
+.info {
+    display:flex;
+    justify-content:space-around;
+    background:#fff;
+    padding:30px;
+    margin:30px;
+    border-radius:12px;
+}
+
+/* QR浮動 */
+.qr {
+    position:fixed;
+    right:20px;
+    top:120px;
+    width:120px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 導覽 -->
+<div class="nav">
+    <div class="logo">八大森林樂園</div>
+    <div class="menu">
+        <a href="#">園區介紹</a>
+        <a href="#">活動體驗</a>
+        <a href="#">交通資訊</a>
+    </div>
+    <a class="btn" href="https://8da-camp.epo.tw/" target="_blank">立即預約</a>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>走進森林，遇見美好</h1>
+        <p>親近自然 × 探索體驗 × 放鬆身心</p>
+
+        <div class="icons">
+            <div class="icon">🌳<br>森林探索</div>
+            <div class="icon">👨‍👩‍👧‍👦<br>親子同樂</div>
+            <div class="icon">🏕<br>戶外體驗</div>
+            <div class="icon">❤️<br>自然生態</div>
+        </div>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</div>
+
+<!-- 卡片區 -->
+<div class="cards">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <h3>森林探索</h3>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+        <h3>草原放電</h3>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+        <h3>森林溪流</h3>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <h3>生態觀察</h3>
+    </div>
+</div>
+
+<!-- 資訊 -->
+<div class="info">
+    <div>營業時間<br>08:00 - 17:00</div>
+    <div>園區地址<br>屏東縣潮州鎮潮義路221-1號</div>
+    <div>聯絡電話<br>08-789-8822</div>
+    <div>官方網站<br>8da-camp.epo.tw</div>
+</div>
+
+<!-- QR -->
+<img class="qr" src="qrcode.png">
+
+</body>
+</html>
